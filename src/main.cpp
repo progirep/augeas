@@ -20,6 +20,7 @@ int main(int argNum, const char **args) {
         // Minimize
         if (fa_minimize(automaton)!=0) {
             std::cerr << "Error minimzing the automaton\n";
+            return 1;
         } else {
             
             std::map<struct state *,int> stateNums;
@@ -42,7 +43,7 @@ int main(int argNum, const char **args) {
                             stateNums[to] = statePointers.size();
                             statePointers.push_back(to);                        
                         }
-                        std::cout << stateNum << " " << stateNums[to] << " " << min << " " << max << "\n";
+                        std::cout << stateNum << " " << stateNums[to] << " " << static_cast<int>(min) << " " << static_cast<int>(max) << "\n";
                     }
                 }            
             }
@@ -53,6 +54,7 @@ int main(int argNum, const char **args) {
         }
     } else {
         std::cerr << "Error compiling the regular expression.\n";
+        return 1;
     }
 
 }
