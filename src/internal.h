@@ -24,8 +24,6 @@
 #define INTERNAL_H_
 
 #include "list.h"
-#include "datadir.h"
-#include "augeas.h"
 
 #include <stdio.h>
 #include <string.h>

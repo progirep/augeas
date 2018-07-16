@@ -1,6 +1,0 @@
-# This somewhat nonsensical file used to segfault in test-api.c
-if [ 1 ]; then
-# K
-else
-# I
-fi

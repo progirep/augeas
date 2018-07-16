@@ -23,6 +23,7 @@
 
 #include <stdlib.h>
 #include <stddef.h>
+#include <errno.h>
 
 #include "memory.h"
 

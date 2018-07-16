@@ -29,7 +29,6 @@
  * subset of what Automaton provides is implemented here.
  */
 
-#include <config.h>
 #include <limits.h>
 #include <ctype.h>
 #include <stdbool.h>
@@ -38,6 +37,7 @@
 #include "memory.h"
 #include "ref.h"
 #include "hash.h"
+#include "list.h"
 #include "fa.h"
 
 #define UCHAR_NUM (UCHAR_MAX+1)

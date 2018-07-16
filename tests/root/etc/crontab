@@ -1,3 +1,0 @@
-MAILTO=cron@example.com
-42  * * * * lutter /usr/local/bin/backup
-54 16 * * * lutter /usr/sbin/stuff

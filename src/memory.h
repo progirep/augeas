@@ -23,7 +23,9 @@
 #ifndef MEMORY_H_
 #define MEMORY_H_
 
-#include "internal.h"
+#include <stddef.h>
+
+// #include "internal.h"
 
 /* Don't call these directly - use the macros below */
 int mem_alloc_n(void *ptrptr, size_t size, size_t count) ATTRIBUTE_RETURN_CHECK;
